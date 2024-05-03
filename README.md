@@ -26,7 +26,21 @@ Software
 #### MQTT using Adafruit cloud Documentation:
 [MQTT using Adafruit cloud](ek_ra6m4_sensordummy_da16200_freertos_adafruit_cloud/README.md)
 
+<!-- CONTRIBUTING -->
+## Contributing
 
+1. Fork the Project
+2. Import the projects on your e2studio using the `Rename and import Exisiting C/C++ Project into Workspace`.
+    * module name: sensor1
+        * ek_ra6m4_sensor1_da14531_baremetal_custom_profile
+        * ek_ra6m4_sensor1_da16200_freertos_adafruit_cloud
+2. Create your Feature Branch (`git checkout -b feature/new_module`)
+3. Add your new module after testing it on the reference applications
+3. Commit your Changes (`git commit -m 'Add a new_module'`)
+4. Push to the Branch (`git push origin feature/new_module`)
+5. After test them, send the link of your github to Renesas team
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## References
 1. EK-RA6M4: https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ek-ra6m4-evaluation-kit-ra6m4-mcu-group
