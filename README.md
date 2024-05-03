@@ -11,16 +11,22 @@ Hardware
 * US159-DA16200MEVZ
 
 Software
-* FSP 5.3.0 platform installer
+* FSP 5.3.0 platform installer bundle (e2_studio + FSP)
 
 ### Instructions For contribuiting
-1. Each project will guide you about which portion should be adapted to the new sensor
+1. Import the projects on the e2 Studio (FSP 5.3.0 platform).
+
+[Project Importing guide](https://en-support.renesas.com/knowledgeBase/21062045#:~:text=To%20start%20the%20Import%20Wizard,.%22%20in%20the%20context%20menu.)
+
+2. Each project will guide you about which portion should be adapted to the new sensor
 
 #### BLE Custom profile Documentation:
 [BLE Custom profile - Quick-Connect Sandbox](ek_ra6m4_sensordummy_da14531_baremetal_custom_profile/README.md)
 
 #### MQTT using Adafruit cloud Documentation:
 [MQTT using Adafruit cloud](ek_ra6m4_sensordummy_da16200_freertos_adafruit_cloud/README.md)
+
+
 
 ## References
 1. EK-RA6M4: https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ek-ra6m4-evaluation-kit-ra6m4-mcu-group

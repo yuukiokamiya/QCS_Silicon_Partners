@@ -1,7 +1,7 @@
 ## Overview
 This application project showcases BLE connectivity use case. In this application, the RA MCU kit
 will act as BLE peripheral and user's cellphone/tablet will act as BLE Central.
-In this application project, RA MCU device will read sensor data through I2C interface and publish
+In this application project, RA MCU device will read a dummy sensor data and publish
 the sensor data through DA14531 BLE module.
 
 ## Tools
@@ -11,9 +11,12 @@ Software
 * Python 3.10
 
 #### Instructions For Running the Application
+1. Connect the US159-DA14531EVZ on the EK-RA6M4 PMOD2
+1. Power the board through the USB DEBUG1
 1. Import this project on e2 studio.
-2. Generate the code and build it.
-3. Start a debug section and run the code.
+2. Open the configuration.xml and Generate the code.
+3. Build the project.
+4. Start a debug section and run the code.
 5. At this stage, the MCU kit will start BLE Advertising packet and the green LED will blink.
 6. User can configure Segger RTT Viewer to view the project log.
 7. Open the Quick-Connect Mobile Sandbox application on cellphone/tablet, scan for BLE device and connect to RA MCU Kit.
@@ -27,13 +30,15 @@ Software
 
 #### Instructions adding a new sensor module
 
-1. Rename and modify the sensor_dummy folder to use your sensor driver.
-2. Rename and modify the sensor application interface (sensor_dummy_sensor.c and sensor_dummy_sensor.h).
-3. Generate the Quick-Connect Mobile Sandbox binary
+1. Connect your PMOD sensor on EK-RA6M4 PMOD1 using the US082-INTERPEVZ connector.
+2. Rename and modify the sensor_dummy folder using your sensor driver name.
+    * Look at the sensor_dummy.c (driver) comments to find an example on how to use the FSP rm_comms_i2c interface to read and write data from he i2c bus.  
+3. Rename and modify the sensor application interface (sensor_dummy_sensor.c and sensor_dummy_sensor.h).
+4. Generate the Quick-Connect Mobile Sandbox binary
     * Rename and modify the gui_cfg_sensor_dummy.json to fit your sensor variables.
     * Run the json2array.py to generate the binary:
         .\json2array.py .\src\gui_cfg_{your sensor name}.json .\src\gui_cfg.h
-4. Modify the following files replacing the sensor dummy code where you find the comment:
+5. Modify the following files replacing the sensor dummy code where you find the comment:
 ```c
 /*Start adding @{PLACEHOLDER} code */
 /*end adding @{PLACEHOLDER} code */ 
@@ -45,7 +50,7 @@ Files to be modified:
         * @MACROS
         * @EXTERN_GLOBAL_VARIABLES
         * @FN_DECLARATION
-* src/gui_cfg.h
+* src/gui_cfg.h (Const outputed from the json2array.py)
     * Placeholders:
         * @EXTERN_GLOBAL_VARIABLES
 * src/qe_gen/ble/app_main.c

@@ -155,10 +155,28 @@ select Build QCStudio project option.
     - Verify if your US159-DA16200MEVZ nave the latest SDK firmware. (Refer to "SDK Update Guide DA16200/DA16600" for instructions).  
 
 #### Instructions for adding a new sensor module
+The new sensor module should be attached to the `EK-RA6M4` PMOD1. After pluggin a `US082-INTERPEVZ `this interface follows the PMOD 6A standard with the following configuration:
+``` yaml
+    pmod1:
+      pmod_i2c: 
+        i2c: 
+          channel: sci9
+          type: sci_i2c
+        irq: irq12
+        pins:
+          sda: p203
+          scl: p202
+          reset: p311        
+          int: p008  
+```
 
-1. Rename and modify the sensor_dummy folder to use your sensor driver.
-2. Rename and modify the sensor application interface (sensor_dummy_sensor.c and sensor_dummy_sensor.h).
-3. Modify the following files replacing the sensor dummy code where you find the comment:
+Steps:
+1. Connect your PMOD sensor on `EK-RA6M4` PMOD1 using the `US082-INTERPEVZ` connector.
+2. Rename and modify the sensor_dummy folder using your sensor driver name.
+    * Look at the sensor_dummy.c (driver) comments to find an example on how to use the FSP rm_comms_i2c interface to read and write data from he i2c bus.
+    * This sample code is already configured to use the right i2c channel (sci9) that works only if you are using the `US082-INTERPEVZ` connector.    
+3. Rename and modify the sensor application interface (sensor_dummy_sensor.c and sensor_dummy_sensor.h).
+4. Modify the following files replacing the sensor dummy code where you find the comment:
 ```c
 /*Start adding @{PLACEHOLDER} code */
 /*end adding @{PLACEHOLDER} code */ 
