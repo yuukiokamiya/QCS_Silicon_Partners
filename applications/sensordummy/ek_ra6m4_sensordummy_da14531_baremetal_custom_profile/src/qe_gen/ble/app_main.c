@@ -228,12 +228,19 @@ uint16_t g_conn_hdl;
 static char *version_str = "1.0.0";
 static bool led_on = false;
 static bool notify_cfm = false;
-static const qc_svc_request_handlers_t qc_sv_req_handlers[] = {
-/* Object ID   Read Handler           Write Handler */
-{ 0x0000, handle_read_gui_req, NULL }, { 0x0100, NULL, handle_write_led }, {
-		0x0201, handle_read_dummy_data, NULL }, { 0x0301, handle_read_version,
-		NULL }, { 0xFFFF, NULL, NULL } };
+
+/*Start adding @GLOBAL_VARIABLES code */
+static const qc_svc_request_handlers_t qc_sv_req_handlers[] =
+{
+/* 	Object ID   Read Handler           	Write Handler */
+	{ 0x0000, 	handle_read_gui_req, 	NULL },
+	{ 0x0100, 	NULL, 					handle_write_led },
+	{ 0x0201, 	handle_read_dummy_data, NULL },
+	{ 0x0301, 	handle_read_version,	NULL },
+	{ 0xFFFF, 	NULL, 					NULL }
+};
 static float dummy_data;
+/*Start adding @GLOBAL_VARIABLES code */
 
 /* End user code. Do not edit comment generated here */
 
