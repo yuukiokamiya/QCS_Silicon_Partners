@@ -31,9 +31,16 @@ Software
 
 1. Fork the Project
 2. Import the projects on your e2studio using the `Rename and import Exisiting C/C++ Project into Workspace`.
+[Changing an e² studio project name](https://en-support.renesas.com/knowledgeBase/21225277#:~:text=On%20the%20project%20import%20wizard,name%20in%20the%20current%20workspace.)
     * module name: sensor1
         * ek_ra6m4_sensor1_da14531_baremetal_custom_profile
         * ek_ra6m4_sensor1_da16200_freertos_adafruit_cloud
+3. Add the device image in the device_image folder:
+
+    [Instructions For Adding the Module image](device_image/image.md)
+3. Add the device documentation in the device_documentation folder:
+
+    [Instructions For Adding the Module documentation](device_documentation/documentation.md)
 2. Create your Feature Branch (`git checkout -b feature/new_module`)
 3. Add your new module after testing it on the reference applications
 3. Commit your Changes (`git commit -m 'Add a new_module'`)
