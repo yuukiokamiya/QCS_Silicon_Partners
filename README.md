@@ -35,7 +35,7 @@ Software
 8. Create a new folder on docs with your company and sensor name, then add the module documentation.
 9. Commit your Changes (`git commit -m 'Add a new_module'`)
 10. Push to the Branch (`git push origin feature/new_module`)
-11. Create a pull request to the QCS_Silicaon Partner repository
+11. Create a pull request to the QCS_Silicon Partner repository
 
 ## References
 1. EK-RA6M4: https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ek-ra6m4-evaluation-kit-ra6m4-mcu-group
