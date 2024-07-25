@@ -12,11 +12,11 @@
 /*end adding @INCLUDES code */
 
 /*Start adding @EXTERN_GLOBAL_VARIABLES code */
-#define WIFI_SSID               "aterm-39ad17-g"
-#define WIFI_PWD                "48e493a9e0a69"
+#define WIFI_SSID               ""
+#define WIFI_PWD                ""
 
-#define IO_USERNAME             "YuukiOkamiya"
-#define IO_KEY             		  "aio_GBaI819dnL99KE0qM73FNdnsHxlu"
+#define IO_USERNAME             ""
+#define IO_KEY             		""
 
 #define SENSOR_DATA_COUNT       ( 3 )
 #define USER_LED_TOPIC          "/feeds/led"
