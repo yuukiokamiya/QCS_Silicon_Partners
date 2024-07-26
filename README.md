@@ -24,10 +24,10 @@ Software
 4. Each project will guide you about which portion should be adapted to the new sensor
 
     #### BLE Custom profile Documentation:
-    [BLE Custom profile - Quick-Connect Sandbox](ek_ra6m4_sensordummy_da14531_baremetal_custom_profile/README.md)
+    [BLE Custom profile - Quick-Connect Sandbox](applications/sensordummy/ek_ra6m4_sensordummy_da14531_baremetal_custom_profile/README.md)
 
     #### MQTT using Adafruit cloud Documentation:
-    [MQTT using Adafruit cloud](ek_ra6m4_sensordummy_da16200_freertos_adafruit_cloud/README.md)
+    [MQTT using Adafruit cloud](applications/sensordummy/ek_ra6m4_sensordummy_da16200_freertos_adafruit_cloud/README.md)
 
 5. Create a new application folder with your company and sensor name.
 6. After testing them, add the two projects with your modifications to this folder
@@ -35,7 +35,7 @@ Software
 8. Create a new folder on docs with your company and sensor name, then add the module documentation.
 9. Commit your Changes (`git commit -m 'Add a new_module'`)
 10. Push to the Branch (`git push origin feature/new_module`)
-11. Create a pull request to the QCS_Silicaon Partner repository
+11. Create a pull request to the QCS_Silicon Partner repository
 
 ## References
 1. EK-RA6M4: https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ek-ra6m4-evaluation-kit-ra6m4-mcu-group

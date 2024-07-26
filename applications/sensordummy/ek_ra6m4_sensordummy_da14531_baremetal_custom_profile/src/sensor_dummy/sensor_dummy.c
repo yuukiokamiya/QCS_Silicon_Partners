@@ -70,9 +70,6 @@ fsp_err_t sensor_dummy_getdata(const rm_comms_instance_t *p_i2c,
 	// write_read_params.dest_bytes = 1;
 	// err = sensor_dummy_read(p_i2c, write_read_params);
 	// FSP_ERROR_RETURN(FSP_SUCCESS == err, err);
-	// write_data[0] = reg;
-	// write_data[1] =  (uint8_t)(read_data | 0x83);
-	// return as7331_write(p_i2c, write_data, sizeof(write_data));
 	*p_data = 10;
 	return FSP_SUCCESS;
 }
