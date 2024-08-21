@@ -1,5 +1,5 @@
 ## Overview
-The gas sensor FECS43(Figaro Engineering) allows to detect sulfur dioxide(SO2). By connecting the Pmod of this sensor and Renesas Quick-Connect Platform, you can see the sensor operation.
+The gas sensor TGS5141(Figaro Engineering) allows to detect Carbon monoxide(CO). By connecting the Pmod of this sensor and Renesas Quick-Connect Platform, you can see the sensor operation.
 Refer to [QCIOT-FIGARO](https://www.renesas.com/us/en/products/sensor-products/environmental-sensors/humidity-temperature-sensors/qciot-figaro-figaro-sensor-pmod-boards-quickconnect-iot-platform#tools_support) for the detail of each sensor.
 
 ## Prerequisites
@@ -8,7 +8,7 @@ Users must have:
 ### Hardware
 * EK-RA6M4
 * US082-INTERPEVZ
-* QCIoT-Figaro-FECS43-20
+* QCIoT-Figaro-TGS5141
 * US159-DA14531EVZ(Option for BLE)
 * US159-DA16200MEVZ(Option for WiFi/MQTT)
 
