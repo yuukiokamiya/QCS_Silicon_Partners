@@ -144,6 +144,11 @@ fsp_err_t RM_TGS5141_Read (rm_tgs5141_ctrl_t * const p_api_ctrl, rm_tgs5141_data
         /* Wait callback */
     }
 
+    if(g_i2c_nack)
+    {
+        return FSP_ERR_INVALID_HW_CONDITION;
+    }
+
     rm_tgs5141_delay_us(p_api_ctrl, RM_TGS5141_WAIT_TIME);
 
     /* Read TGS5141 data */

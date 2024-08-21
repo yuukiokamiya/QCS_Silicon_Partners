@@ -47,7 +47,7 @@
             },
             {
               "id": "0203",
-              "name": "Gas",
+              "name": "Combustible Gas",
               "units": "PPM",
               "type": "float",
               "access": "r",

@@ -144,6 +144,11 @@ fsp_err_t RM_TGS6810_Read (rm_tgs6810_ctrl_t * const p_api_ctrl, rm_tgs6810_data
         /* Wait callback */
     }
 
+    if(g_i2c_nack)
+    {
+        return FSP_ERR_INVALID_HW_CONDITION;
+    }
+
     rm_tgs6810_delay_us(p_api_ctrl, RM_TGS6810_WAIT_TIME);
 
     /* Read TGS6810 data */

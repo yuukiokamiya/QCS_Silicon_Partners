@@ -144,6 +144,11 @@ fsp_err_t RM_FECS50_Read (rm_fecs50_ctrl_t * const p_api_ctrl, rm_fecs50_data_t 
         /* Wait callback */
     }
 
+    if(g_i2c_nack)
+    {
+        return FSP_ERR_INVALID_HW_CONDITION;
+    }
+
     rm_fecs50_delay_us(p_api_ctrl, RM_FECS50_WAIT_TIME);
 
     /* Read FECS50 data */
