@@ -48,8 +48,8 @@ rm_tgs6810_api_t const g_tgs6810_on_tgs6810 =
     .read                 = RM_TGS6810_Read,
 };
 
-volatile bool g_i2c_completed = false;
-volatile bool g_i2c_nack      = false;
+static volatile bool g_i2c_completed = false;
+static volatile bool g_i2c_nack      = false;
 
 /*******************************************************************************************************************//**
  * @addtogroup RM_TGS6810

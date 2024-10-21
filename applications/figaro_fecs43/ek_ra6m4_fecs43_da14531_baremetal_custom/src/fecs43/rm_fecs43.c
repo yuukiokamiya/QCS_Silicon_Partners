@@ -48,8 +48,8 @@ rm_fecs43_api_t const g_fecs43_on_fecs43 =
     .read                 = RM_FECS43_Read,
 };
 
-volatile bool g_i2c_completed = false;
-volatile bool g_i2c_nack      = false;
+static volatile bool g_i2c_completed = false;
+static volatile bool g_i2c_nack      = false;
 
 /*******************************************************************************************************************//**
  * @addtogroup RM_FECS43

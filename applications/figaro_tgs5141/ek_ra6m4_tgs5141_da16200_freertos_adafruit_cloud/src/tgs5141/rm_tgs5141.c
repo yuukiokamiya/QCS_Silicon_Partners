@@ -48,8 +48,8 @@ rm_tgs5141_api_t const g_tgs5141_on_tgs5141 =
     .read                 = RM_TGS5141_Read,
 };
 
-volatile bool g_i2c_completed = false;
-volatile bool g_i2c_nack      = false;
+static volatile bool g_i2c_completed = false;
+static volatile bool g_i2c_nack      = false;
 
 /*******************************************************************************************************************//**
  * @addtogroup RM_TGS5141
